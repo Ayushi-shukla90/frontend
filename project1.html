@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        justify-content: center;
+    display: flex;
+    align-content: center;
+    }
+
+    .container{
+        margin:10px;
+        height:250px;
+        width: 200px;
+        border: 2px solid purple;
+        display:inline-block;
+        border-radius: 11px;
+        position: relative;
+        top:90px;
+    }
+    #parent{
+        height:100px;
+        width:200px;
+        position: relative;
+        border-radius: 8px;
+    }
+    #child{
+        position:relative;
+        top: -50px;
+        left: 50px;
+      width: 100px;     
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+    }
+</style>
+<body>
+    <div class="container">
+         <div>
+              <img src="https://www.wildnatureimages.com/images/640/070620-014-The-Tetons.jpg" alt="Random Image"  id="parent">
+      </div>
+            <div>
+                <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-200115-618833.jpg&fm=jpg" alt="Random Image" id="child">
+            
+         </div>
+    </div>
+      <div class="container">
+         <div>
+              <img src="https://www.wildnatureimages.com/images/640/070620-014-The-Tetons.jpg" alt="Random Image"  id="parent">
+      </div>
+            <div>
+                <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-200115-618833.jpg&fm=jpg" alt="Random Image" id="child">
+            
+         </div>
+    </div>
+      <div class="container">
+         <div >
+              <img src="https://www.wildnatureimages.com/images/640/070620-014-The-Tetons.jpg" alt="Random Image"  id="parent">
+      </div>
+            <div>
+                <img src="https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?cs=srgb&dl=pexels-sagui-andrea-200115-618833.jpg&fm=jpg" alt="Random Image" id="child">
+            
+         </div>
+    </div>
+   
+</body>
+</html>
