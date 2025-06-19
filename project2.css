@@ -27,7 +27,6 @@ li{
     background-color: tomato;
     color: white;
     padding: 5px 10px;
-    display: flex;;
-   justify-content: end;
+    display: flex;
    margin:left  -100px;
 }
