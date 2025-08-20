@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Card with Moving Background</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #2c3e50, #bdc3c7);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .moving-rect {
+      position: absolute;
+      width: 350px;
+      height: 500px;
+      border-radius: 20px;
+      backdrop-filter: blur(20px);
+      border: 1px solid blue;
+      animation: floatRect 8s infinite linear alternate;
+      z-index: 0;
+    }
+
+    @keyframes floatRect {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      color: #333;
+      z-index: 1; 
+    }
+    .card:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+      transform: translateY(-10px);
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease;
+    }
+
+    .tag {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #3b82f6;
+      color: white;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .features {
+      margin: 10px 0;
+      font-size: 14px;
+      color: black;
+      line-height: 1.2;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+    .img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="moving-rect"></div>
+  <div class="card">
+    <span class="tag">NEW</span>
+    <h3>Pro UI Components</h3>
+    <img class= "img" src="https://api.theindia.co.in/storage/image/places/image/trimbakeshwar-jyotirling-mandir-77840.jpg" alt="">
+    <h3>Trimbakeshwar</h3>
+    <div class="features">
+    <ul><li>Book your offer <br></li></ul>  
+    <ul><li> Get the card <br></li></ul> 
+    <ul><li> Enjoy the trip</li></ul>
+    <ul><li>  Pack your bags <br></li></ul>
+     <ul><li> Enjoy your destination</li></ul>
+    </div>
+    <div class="price">₹2999</div>
+    <a href="#" class="btn">Get Now</a>
+  </div>
+</body>
+</html>

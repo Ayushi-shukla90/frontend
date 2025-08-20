@@ -1,0 +1,34 @@
+.container{
+    height: 400px;
+    width: 800px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+#one:hover .one{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+   
+}
+#one{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    transition-timing-function: ease-in;
+}
+#two{
+    background-color: rgb(213, 37, 187);
+    width: 100px;
+    height: 100px;
+}
+#three{
+    background-color: rgb(109, 25, 233);
+    width: 100px;
+    height: 100px;
+}
+#four{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+}

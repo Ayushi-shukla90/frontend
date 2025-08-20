@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  nav {
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      color: orange;
+    }
+  @media screen and (max-width: 480px){
+   nav{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+   }
+   nav ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+   }
+  }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: orange;
+    }
+
+    </style>
+</head>
+<body>
+      <nav>
+    <div class="logo">Coding Thinkers</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
